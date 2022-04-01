@@ -18,7 +18,7 @@ body {
 
 }
 
-/*Styles for header and nav*/
+/*Styles for header, footer, and nav*/
 header {
     color: var(--secondary-color);
     padding: 20px 70px;
@@ -50,6 +50,14 @@ header nav ul {
 
 header nav ul li a {
     color: var(--secondary-color);
+}
+
+footer {
+    color: var(--secondary-color);
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 /*End styles for header and nav*/
@@ -169,6 +177,9 @@ header nav ul li a {
     font-size: 20px;
     color: var(--secondary-color);
 }
+/*end styling for contact me section */
+
+
 
 
 
