@@ -36,7 +36,6 @@ header h1 {
 header nav {
     font-size: 20px;
     border-bottom: var( --secondary-color);
-    width: 30%;
     margin: 10px;
 }
 
@@ -49,6 +48,7 @@ header nav ul {
 }
 
 header nav ul li a {
+    padding: 10px 15px;
     color: var(--secondary-color);
 }
 
@@ -64,7 +64,7 @@ footer {
 
 /*Styles for hero section*/
 .hero {
-    background-image: url(../images/bridge-coast-golden-gate-bridge.jpg);
+    background-image: url(../images/Hero\ BG.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -123,12 +123,21 @@ footer {
     margin: 40px 0;
 }
 
-.app-parent {
+.app-container {
     width: 60%;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
 }
+
+.app-container a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 
 .primary-app {
     margin: 1%;
@@ -138,7 +147,12 @@ footer {
     display: flex;
     align-items: flex-end;
     background-size: cover;
+    background-position: center;
     opacity: 0.5;
+}
+
+.primary-app:hover {
+    opacity: 1;
 }
 
 .secondary-app {
@@ -149,28 +163,40 @@ footer {
     display: flex;
     align-items: flex-end;
     background-size: cover;
+    background-position: center;
     opacity: 0.5;
+}
+
+.secondary-app:hover {
+    opacity: 1;
 }
 
 .app-label {
     padding: 10px 20px;
     margin: 40px 0;
-    font-size: 20px;
+    width:fit-content;
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
 
 #run-buddy {
-    background-image: url(../images/hero-bg.jpg);
+    background-image: url(../images/Run\ Buddy\ Cover.jpg);
 }
 
 #robot-gladiators {
-    background-image: url(../images/fighting-robots-red-blue_1600.jpg);
+    background-image: url(../images/Robot\ Gladiators\ Cover.jpg);
 }
 
 #the-company {
-    background-image: url(../images/5ffd247fc91feea9a5e864ad_Our-Work-Header.jpg);
-    background-size: cover;
+    background-image: url(../images/theCOMPANY\ cover.jpg);
+}
+
+#horiseon {
+    background-image: url(../images/Horiseon\ Cover.jpg);
+}
+
+#password-generator {
+    background-image: url(../images/Password\ Generator\ Cover.webp);
 }
 /* end styling for main work section*/
 
