@@ -21,28 +21,32 @@ body {
 /*Styles for header, footer, and nav*/
 header {
     color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 20px 70px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webskit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 48px;
     margin: 0;
+    white-space: nowrap;
 }
 
 header nav {
     font-size: 20px;
-    border-bottom: var( --secondary-color);
     margin: 10px;
 }
 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
@@ -50,6 +54,8 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 30px;
 }
 
 footer {
@@ -110,7 +116,7 @@ footer {
 #about-me img {
     display: flex;
     align-items: center;
-    size: 70%;
+    max-width: 100%;
     padding: 20px 40px;
 }
 /*end "about me" styling */
@@ -232,4 +238,28 @@ footer {
     border-right: 2px solid var(--tertiary-color);
     display: flex;
     justify-content: flex-end;
+}
+
+
+/*------------- MEDIA QUERIES-------------*/
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER (980px AND UNDER)*/
+@media screen and (max-width: 980px) {
+  header {
+      padding: 0;
+      flex-direction: column;
+      align-content: center;
+  }
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER (768px AND UNDER)*/
+@media screen and (max-width: 768px) {
+   
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER (575px AND UNDER)*/
+@media screen and (max-width: 575px) {
+    
 }
