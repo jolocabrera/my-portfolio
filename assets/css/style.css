@@ -137,7 +137,8 @@ footer {
     border: 5px solid var(--secondary-color);
     display: flex;
     align-items: flex-end;
-    background-image: url(../images/bridge-coast-golden-gate-bridge.jpg);
+    background-size: cover;
+    opacity: 0.5;
 }
 
 .secondary-app {
@@ -147,15 +148,29 @@ footer {
     border: 5px solid var(--secondary-color);
     display: flex;
     align-items: flex-end;
-    background-image: url(../images/bridge-coast-golden-gate-bridge.jpg);
+    background-size: cover;
+    opacity: 0.5;
 }
 
 .app-label {
     padding: 10px 20px;
     margin: 40px 0;
-    font-size: 30px;
+    font-size: 20px;
     color: var(--primary-color);
     background-color: var(--secondary-color);
+}
+
+#run-buddy {
+    background-image: url(../images/hero-bg.jpg);
+}
+
+#robot-gladiators {
+    background-image: url(../images/fighting-robots-red-blue_1600.jpg);
+}
+
+#the-company {
+    background-image: url(../images/5ffd247fc91feea9a5e864ad_Our-Work-Header.jpg);
+    background-size: cover;
 }
 /* end styling for main work section*/
 
