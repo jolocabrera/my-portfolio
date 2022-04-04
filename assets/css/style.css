@@ -64,6 +64,14 @@ header nav ul li a {
     font-size: 30px;
 }
 
+header nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none;
+    
+}
+
 footer {
     color: var(--secondary-color);
     font-size: 20px;
@@ -120,7 +128,7 @@ footer {
 }
 
 #about-me .img-container {
-    width: 100%;
+    width: 80%;
 }
 
 #about-me img {
@@ -130,6 +138,8 @@ footer {
     padding: 20px 40px;
     border-radius: 50%;
 }
+
+
 /*end "about me" styling */
 
 /*Styles for work section */
@@ -164,7 +174,7 @@ footer {
     display: flex;
     align-items: flex-end;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     opacity: 0.5;
 }
 
@@ -249,6 +259,7 @@ footer {
     border-right: 2px solid var(--tertiary-color);
     display: flex;
     justify-content: flex-end;
+    white-space: nowrap;
 }
 
 
@@ -261,6 +272,14 @@ footer {
       align-content: center;
       position: relative;
   }
+  header nav ul{
+      display: flex;
+      flex-direction: column;
+  }
+
+  header nav ul li a {
+      padding: 10px 0px;
+  }
 
   #about-me , #work, #contact-me {
       flex-direction: column;
@@ -270,6 +289,7 @@ footer {
   #about-me article {
       flex-direction: column-reverse;
       align-items: center;
+      width: 90%;
   }
 
   .section-title {
@@ -290,12 +310,17 @@ footer {
   .app-container, #contact-me address {
       margin-top: 10px;
   }
+
+  .app-label {
+    font-size: 10px;
+  }
   
 
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER (768px AND UNDER)*/
 @media screen and (max-width: 768px) {
+
     #contact-me address {
         width: 100%;
     }
@@ -303,10 +328,30 @@ footer {
     .app-container {
         width: 80%;
     }
+
+    #about-me .img-container {
+        width: 100%;
+    }
+
+    #about-me article {
+        padding: 0px;
+    }
    
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER (575px AND UNDER)*/
 @media screen and (max-width: 575px) {
+    header nav{
+        width: 100%;
+    }
     
+    header nav ul li a{
+        font-size: 20px;
+    }
+
+    #contact-me address {
+        flex-direction: column;
+    }
+
+
 }
