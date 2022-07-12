@@ -173,8 +173,9 @@ footer {
     border: 5px solid var(--secondary-color);
     display: flex;
     align-items: flex-end;
-    background-size: cover;
-    background-position: right;
+    background-size:50%;
+    background-position:50% 0%;
+    background-repeat: no-repeat;
     opacity: 0.5;
 }
 
@@ -224,6 +225,10 @@ footer {
 
 #password-generator {
     background-image: url(../images/Password\ Generator\ Cover.webp);
+}
+
+#pet-park{
+    background-image: url(../images/petparklogo.svg);
 }
 /* end styling for main work section*/
 
